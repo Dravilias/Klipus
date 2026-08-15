@@ -1,0 +1,8 @@
+services:
+  klipus:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - /mnt/ssd/klipus/tmp:/tmp/klipus
