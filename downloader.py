@@ -17,8 +17,8 @@ async def download_medal(url) :
         "-o", output_path,
         url,
 
-        stdout = asyncio.subprocess.PIPE, # stuff out
-        stderr = asyncio.subprocess.PIPE # error out
+        stdout = asyncio.subprocess.PIPE, 
+        stderr = asyncio.subprocess.PIPE
     )
 
     try:
